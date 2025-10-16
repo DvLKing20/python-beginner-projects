@@ -7,3 +7,5 @@ A collection of simple Python projects I made while learning the basics of progr
 ## Projects
 - **Calculator** – performs basic arithmetic operations (+, -, /, %)
 - **Real-Time Clock** – shows current date, time, and a greeting based on time of day
+- 
+Each project helped me understand loops, conditionals, input/output, and logic in Python.

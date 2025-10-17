@@ -8,7 +8,7 @@ def Random_guess(Max_Value,low,med):
     elif med == 'med':
         print("Chooose a Number Between 0 to 59")
         Random_Number = Max_Value
-    else:
+    else: #hard
         print(f"Choose a Number Between 0 to 100 Its Close to impossible to do this try Your best :)")
         Random_Number = Max_Value
     i = 0
@@ -17,20 +17,24 @@ def Random_guess(Max_Value,low,med):
 #   Random_Number = int(time.strftime("%M"))
      
      try:
-      UserInput = int(input("Enter the Number You Guessed or Enter 9999 to Exit: "))
+      UserInput = input("Enter the Number You Guessed (Type exit to Exit): ")
+
+      if UserInput.lower() == 'exit':
+                print(f"Total Tries = {i}")
+                print("Exiting...")
+                time.sleep(1)
+                break
+      
+      UserInput = int(UserInput)
      except ValueError:
         print("Oops! That wasn't a number. Try again.")
         continue
      
      if UserInput == Random_Number:
+         i+=1
          print("You Guessed the Correct Number\n")
          print(f"Total Tries = {i}")
          break
-     elif UserInput == 9999:
-           print(f"Total Tries = {i}")
-           print(f"Exiting...")
-           time.sleep(1)
-           break
      elif UserInput > Random_Number:
          print("Your Number is Greater the Actual Number try again : \n")
          i+=1

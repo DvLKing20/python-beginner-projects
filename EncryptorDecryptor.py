@@ -2,40 +2,61 @@ import random
 import time
 
 def DECRYPTOR(TO_DECRYPT):
-  DECRYPT = list(TO_DECRYPT)
-  i = len(TO_DECRYPT)
-  if i >= 3:
-        RMV = 0
-        while RMV < 3:
-         RMV += 1
-         del DECRYPT[0]
-        RMX = 0
-        while RMX < 3:
-           RMX += 1
-           del DECRYPT[-1] 
-        REMOVED = DECRYPT.pop(-1)
-        DECRYPT.insert(0,REMOVED) 
-        return  ''.join(DECRYPT)
-  else:
-      REMOVED = DECRYPT.pop(-1)
-      DECRYPT.insert(0,REMOVED) 
-      return ''.join(DECRYPT)
+  RESULT = []
+  ENCRYPT = TO_DECRYPT.split(" ")
+  for CHECK_LEN in ENCRYPT:
+     CHECK_LIST = list(CHECK_LEN)
+
+     
+     if len(CHECK_LIST) >= 3:
+           REMOVE = 1
+           while REMOVE <= 3:
+             del CHECK_LIST[0]
+             REMOVE += 1
+           REMOVE = 1  
+           while REMOVE <= 3:
+             del CHECK_LIST[-1]
+             REMOVE += 1
+
+           REMOVED = CHECK_LIST.pop(-1)
+           CHECK_LIST.insert(0, REMOVED)
+           RESULT.append(''.join(CHECK_LIST))
+     else:
+           REMOVED = CHECK_LIST.pop(-1)        
+           CHECK_LIST.insert(0, REMOVED)
+           RESULT.append(''.join(CHECK_LIST))
+           
+      
+  return ' '.join(RESULT)
 
 def ENCRYPTOR(TO_ENCRYPT):
-    ENCRYPT = list(TO_ENCRYPT)
-    i = len(TO_ENCRYPT)
-    REMOVED = ENCRYPT.pop(0)
-    ENCRYPT.append(REMOVED)    
-    if i >= 3:
-             for ADD in range(3):
-                ADD_THIS = chr(random.randint(97, 122))
-                ENCRYPT.append(ADD_THIS)
-                for ADDER in range(ADD):
+    RESULT = []
+    ENCRYPT = TO_ENCRYPT.split(" ")
+    for CHECK_LEN in ENCRYPT:
+        
+        
+        CHECK_LIST = list(CHECK_LEN)
+        REMOVED = CHECK_LIST.pop(0)
+        CHECK_LIST.append(REMOVED)
+        
+        if len(CHECK_LIST) >= 3:
+    
+
+
+              for ADD in range(3):
+                 #add 3 random chracters at the end one by one
+                 ADD_THIS = chr(random.randint(97, 122))
+                 CHECK_LIST.append(ADD_THIS)
+                 for ADDER in range(ADD):
+                    #add 3 random characters front one by one
                     ADD_THAT = chr(random.randint(97, 122))
-                    ENCRYPT.insert(0,ADD_THAT)
-             return  ''.join(ENCRYPT)
-    else:
-        return ''.join(ENCRYPT)
+                    CHECK_LIST.insert(0,ADD_THAT)
+              
+              RESULT.append(''.join(CHECK_LIST))
+        else:
+                RESULT.append(''.join(CHECK_LIST))
+        
+    return ' '.join(RESULT)
 
 def TAKING_INPUT():
  while True:

@@ -1,10 +1,10 @@
 import random
 import time
 
-def DECRYPTOR(TO_DECRYPT):
+def DECODER(TO_DECODE):
   RESULT = []
-  ENCRYPT = TO_DECRYPT.split(" ")
-  for CHECK_LEN in ENCRYPT:
+  ENCODED = TO_DECODE.split(" ")
+  for CHECK_LEN in ENCODED:
      CHECK_LIST = list(CHECK_LEN)
 
      
@@ -29,7 +29,7 @@ def DECRYPTOR(TO_DECRYPT):
       
   return ' '.join(RESULT)
 
-def ENCRYPTOR(TO_ENCRYPT):
+def ENCODER(TO_ENCRYPT):
     RESULT = []
     ENCRYPT = TO_ENCRYPT.split(" ")
     for CHECK_LEN in ENCRYPT:
@@ -61,21 +61,21 @@ def ENCRYPTOR(TO_ENCRYPT):
 def TAKING_INPUT():
  while True:
   print("\nEnter the Number Based On What you want to do :")
-  print("1: Encryption")
-  print("2: Decryption")
+  print("1: Encode")
+  print("2: Decode")
   print("0: Exit")
   try:
-      CHOSE_CRYPTER = int(input("Enter The Number Here : "))
-      if CHOSE_CRYPTER == 1:
+      CHOSE_CODER = int(input("Enter The Number Here : "))
+      if CHOSE_CODER == 1:
          print("\nEnter What you want to Encrypt : ")
          OPERATION_INPUT = input("Enter it Here : ")
-         return ENCRYPTOR(OPERATION_INPUT)
-      elif CHOSE_CRYPTER == 2:
+         return ENCODER(OPERATION_INPUT)
+      elif CHOSE_CODER == 2:
          print("\nEnter What you want to Decrypt : ")
          OPERATION_INPUT = input("Enter it Here : ")
-         return DECRYPTOR(OPERATION_INPUT)
-      elif CHOSE_CRYPTER == 0:
-         return CHOSE_CRYPTER
+         return DECODER(OPERATION_INPUT)
+      elif CHOSE_CODER == 0:
+         return CHOSE_CODER
   except ValueError:
       print("\nError Please Enter a Valid Number")
 while True: 

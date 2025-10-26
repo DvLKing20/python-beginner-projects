@@ -66,18 +66,22 @@ def TAKING_INPUT():
   print("0: Exit")
   try:
       CHOSE_CODER = int(input("Enter The Number Here : "))
-      if CHOSE_CODER == 1:
+  except ValueError:
+      print("\nError Please Enter a Valid Number")
+      continue
+  if CHOSE_CODER == 1:
          print("\nEnter What you want to Encode : ")
          OPERATION_INPUT = input("Enter it Here : ")
          return ENCODER(OPERATION_INPUT)
-      elif CHOSE_CODER == 2:
+  elif CHOSE_CODER == 2:
          print("\nEnter What you want to Decode : ")
          OPERATION_INPUT = input("Enter it Here : ")
          return DECODER(OPERATION_INPUT)
-      elif CHOSE_CODER == 0:
+  elif CHOSE_CODER == 0:
          return CHOSE_CODER
-  except ValueError:
-      print("\nError Please Enter a Valid Number")
+  else:
+         print("\nError The Opration Doesnt Exist")
+         continue
 while True: 
  OPERATION_COMPLETED = TAKING_INPUT()
  if OPERATION_COMPLETED == 0:

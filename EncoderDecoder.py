@@ -29,10 +29,10 @@ def DECODER(TO_DECODE):
       
   return ' '.join(RESULT)
 
-def ENCODER(TO_ENCRYPT):
+def ENCODER(TO_ENCODE):
     RESULT = []
-    ENCRYPT = TO_ENCRYPT.split(" ")
-    for CHECK_LEN in ENCRYPT:
+    ENCODE = TO_ENCODE.split(" ")
+    for CHECK_LEN in ENCODE:
         
         
         CHECK_LIST = list(CHECK_LEN)
@@ -61,17 +61,17 @@ def ENCODER(TO_ENCRYPT):
 def TAKING_INPUT():
  while True:
   print("\nEnter the Number Based On What you want to do :")
-  print("1: Encode")
-  print("2: Decode")
+  print("1: Encode a Message")
+  print("2: Decode a Message")
   print("0: Exit")
   try:
       CHOSE_CODER = int(input("Enter The Number Here : "))
       if CHOSE_CODER == 1:
-         print("\nEnter What you want to Encrypt : ")
+         print("\nEnter What you want to Encode : ")
          OPERATION_INPUT = input("Enter it Here : ")
          return ENCODER(OPERATION_INPUT)
       elif CHOSE_CODER == 2:
-         print("\nEnter What you want to Decrypt : ")
+         print("\nEnter What you want to Decode : ")
          OPERATION_INPUT = input("Enter it Here : ")
          return DECODER(OPERATION_INPUT)
       elif CHOSE_CODER == 0:

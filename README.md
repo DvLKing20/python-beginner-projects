@@ -11,4 +11,5 @@ A collection of simple Python projects I made while learning the basics of progr
 - **PythonQuizGame** – A Simple Quiz Game Made With Python
 - **EncoderDecoder** - Simple Encoder and Decoder
 - **LibraryApp** - A simple Python OOP project that lets you add, display, and read books from a virtual shelf.
+
 Each project helped me understand loops, conditionals, input/output, and logic in Python.

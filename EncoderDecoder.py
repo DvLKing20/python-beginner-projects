@@ -86,10 +86,10 @@ while True:
  OPERATION_COMPLETED = TAKING_INPUT()
  if OPERATION_COMPLETED == 0:
      print("Exiting...")
-     time.sleep(1)
+     time.sleep(.2)
      break
  else:
      print("Processing...")
-     time.sleep(1)
+     time.sleep(.3)
      print(f"Your Operation Was Completed Here is Your Entered Stuff '{OPERATION_COMPLETED}'\n")
-     time.sleep(1)
+     time.sleep(2)

@@ -11,7 +11,7 @@ A collection of simple Python projects I made while learning the basics of progr
 - **PythonQuizGame** – A Simple Quiz Game Made With Python
 - **EncoderDecoder** - Simple Encoder and Decoder
 - **LibraryApp** - A simple Python OOP project that lets you add, display, and read books from a virtual shelf.
-- **FileManager** - Python File Manager Tool That Can Create,Rename,and Delete Multiple Files in Bulk
+- **FileManager** - Python File Manager Tool That Can Create,Rename,and Delete,copy Multiple Files and Folders in Bulk
 - **PdfMerger** - Python Pdf Merger That Takes Two Pdf and Merges Them in a New Pdf
 
 Each project helped me understand loops, conditionals, input/output, and logic in Python.

@@ -13,7 +13,7 @@ class Library:
             time.sleep(0.5)
             self.THE_SHELF.append(BOOK_NAME)
             self.ADD_THE_STORY.append(STORY)
-            print("THE BOOK WAS ADDED SUCESSFULLY CHECK ON DISPLAY TAB")
+            print("THE BOOK WAS ADDED SUCCESSFULLY CHECK ON DISPLAY TAB")
 
     def DISPLAY_BOOKS(self):
         for INDEX,BOOK in enumerate(self.THE_SHELF):

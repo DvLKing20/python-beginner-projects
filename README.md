@@ -15,5 +15,8 @@ A collection of simple Python projects I made while learning the basics of progr
 - **PdfMerger** - Python Pdf Merger That Takes Two Pdf and Merges Them in a New Pdf
 - **WaterReminder** Takes Input from User How Many Time They Want To Be Reminded And Between How Many Hours
 - **NewsFetcher** Added A News Fetcher That Uses Requests and Json Module To Fetch News From The NewAPI
+- **DigitalClockPyQt5** – A PyQt5 digital clock GUI showing live time.
+- **Hangman** – Classic hangman game in Python.
+-**TodoList** – Simple CLI-based to-do list with add/remove/display functions.
 
 Each project helped me understand loops, conditionals, input/output, and logic in Python.

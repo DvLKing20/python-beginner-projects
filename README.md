@@ -17,6 +17,6 @@ A collection of simple Python projects I made while learning the basics of progr
 - **NewsFetcher** Added A News Fetcher That Uses Requests and Json Module To Fetch News From The NewAPI
 - **DigitalClockPyQt5** – A PyQt5 digital clock GUI showing live time.
 - **Hangman** – Classic hangman game in Python.
--**TodoList** – Simple CLI-based to-do list with add/remove/display functions.
+- **TodoList** – Simple CLI-based to-do list with add/remove/display functions.
 
 Each project helped me understand loops, conditionals, input/output, and logic in Python.

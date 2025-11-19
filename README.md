@@ -18,5 +18,6 @@ A collection of simple Python projects I made while learning the basics of progr
 - **DigitalClockPyQt5** – A PyQt5 digital clock GUI showing live time.
 - **Hangman** – Classic hangman game in Python.
 - **TodoList** – Simple CLI-based to-do list with add/remove/display functions.
+- **StopWatch** (PyQt5) A simple stopwatch made with PyQt5. It has Start, Stop, and Reset buttons, and it shows the time updating on the screen using a timer.
 
 Each project helped me understand loops, conditionals, input/output, and logic in Python.
